@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Musonda | Research & Systems</title>
+    <style>
+      :root {
+        --bg: #080808;
+        --text: #a0a0a0;
+        --highlight: #ffffff;
+        --dim: #444;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "JetBrains Mono", monospace;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 80px 40px;
+        line-height: 1.6;
+      }
+
+      header {
+        margin-bottom: 100px;
+      }
+      .name {
+        /* color: var(--highlight); */
+        color: #03ad3c;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .links a {
+        color: var(--dim);
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 0.8rem;
+      }
+      .links a:hover {
+        color: var(--highlight);
+      }
+
+      .section-label {
+        color: var(--dim);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 8px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin-bottom: 80px;
+      }
+      .project h3 {
+        color: var(--highlight);
+        font-size: 1rem;
+        margin: 0 0 10px 0;
+      }
+      .project p {
+        font-size: 0.9rem;
+      }
+      .tags {
+        font-size: 0.75rem;
+        color: #555;
+        margin-top: 10px;
+      }
+
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 80px;
+      }
+      .stack-item {
+        flex: 1;
+        min-width: 150px;
+      }
+      .stack-item h4 {
+        color: var(--highlight);
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      .stack-item ul {
+        list-style: none;
+        padding: 0;
+        font-size: 0.8rem;
+        color: #666;
+      }
+      .bio {
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 0.9rem;
+      }
+
+      footer {
+        margin-top: 100px;
+        color: #333;
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      .email {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="name">PRINCE MUSONDA</div>
+      <div class="links">
+        <a href="https://github.com/prince-musonda">GITHUB</a>
+        <span class="email">Email: princemusonda5840@gmail.com</span>
+      </div>
+    </header>
+    <h3 class="bio">
+      Freshman studying CS and Physics. I spend my time self-learning how to
+      build software and hardware from scratch—often by reimplementing AI
+      architectures from research papers and building simple projects as a way
+      of learning. My goal is to apply this knowledge to help solve climate
+      change, make healthcare more accessible, and build systems that align with
+      how the human mind understands information to make learning anything
+      easier.
+    </h3>
+    <div class="section-label">Selected Works</div>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Vision Transformer (ViT) Wearable</h3>
+        <p>
+          A Raspberry Pi-based spatial awareness device for the blind.
+          Implemented the transformer architecture from scratch in PyTorch.
+        </p>
+        <div class="tags">PyTorch · Computer Vision · Robotics</div>
+      </div>
+      <div class="project">
+        <h3>CycleGAN Synthesis</h3>
+        <p>
+          Generative adversarial network for unpaired image-to-image
+          translation. Optimized for bidirectional conversion.
+        </p>
+        <div class="tags">Deep Learning · GANs · Research</div>
+      </div>
+      <div class="project">
+        <h3>Rio: Search & Rescue</h3>
+        <p>
+          Miniature autonomous robot utilizing OpenCV for object detection and
+          task automation.
+        </p>
+        <div class="tags">C++ · Arduino · Python</div>
+      </div>
+      <div class="project">
+        <h3>A-Store Full Stack</h3>
+        <p>
+          High-performance e-commerce engine with server-side rendering and
+          custom REST APIs.
+        </p>
+        <div class="tags">Next.js · Node.js · MongoDB</div>
+      </div>
+    </div>
+
+    <div class="section-label">Technical Primitives</div>
+    <div class="stack">
+      <div class="stack-item">
+        <h4>Low Level</h4>
+        <ul>
+          <li>C / C++</li>
+          <li>Arduino</li>
+          <li>Raspberry Pi</li>
+          <li>Bare metal C</li>
+        </ul>
+      </div>
+      <div class="stack-item">
+        <h4>Intelligence</h4>
+        <ul>
+          <li>Neural Networks</li>
+          <li>Transformers</li>
+          <li>CNN</li>
+          <li>Pytorch</li>
+          <li>Hugging Face</li>
+          <li>Scikit-learn / Numpy</li>
+        </ul>
+      </div>
+      <div class="stack-item">
+        <h4>Systems</h4>
+        <ul>
+          <li>PostgreSQL / SQL</li>
+          <li>NextJs / React</li>
+          <li>Mobile Dev with React Native</li>
+          <li>Linux Environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>DECENTRALIZED ENGINEERING / 2025</footer>
+  </body>
+</html>
