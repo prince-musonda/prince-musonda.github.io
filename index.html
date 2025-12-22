@@ -22,19 +22,22 @@
       }
 
       header {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
       }
       .name {
-        /* color: var(--highlight); */
-        color: #03ad3c;
+        color: #ffffff;
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 8px;
       }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
       .links a {
         color: var(--dim);
         text-decoration: none;
-        margin-right: 20px;
         font-size: 0.8rem;
       }
       .links a:hover {
@@ -93,8 +96,11 @@
         color: #666;
       }
       .bio {
-        color: rgba(255, 255, 255, 0.74);
+        color: #e0f7fa;
+        border-left: 2px solid #03ad3c;
+        padding-left: 20px;
         font-size: 0.9rem;
+        margin-bottom: 60px;
       }
 
       footer {
@@ -106,6 +112,34 @@
 
       .email {
         color: white;
+        font-size: 0.8rem;
+      }
+
+      .current_learning {
+        color: #00e5ff;
+        background-color: #3a3a3a; /* Darkened slightly for better contrast */
+        border-radius: 12px;
+        padding: 1rem;
+      }
+
+      /* MOBILE RESPONSIVENESS */
+      @media (max-width: 768px) {
+        body {
+          padding: 40px 24px;
+        }
+        header {
+          margin-bottom: 50px;
+        }
+        .project-grid {
+          grid-template-columns: 1fr; /* Stack projects vertically */
+          gap: 30px;
+        }
+        .stack {
+          gap: 20px;
+        }
+        .stack-item {
+          min-width: 100%; /* Stack tech primitives vertically */
+        }
       }
     </style>
   </head>
@@ -129,9 +163,9 @@
     <div class="section-label">Selected Works</div>
     <div class="project-grid">
       <div class="project">
-        <h3>Vision Transformer (ViT) Wearable</h3>
+        <h3>Vision Transformer (ViT) Wearable Device</h3>
         <p>
-          A Raspberry Pi-based spatial awareness device for the blind.
+          A Raspberry Pi-based spatial awareness device for the Vision Impaired.
           Implemented the transformer architecture from scratch in PyTorch.
         </p>
         <div class="tags">PyTorch · Computer Vision · Robotics</div>
@@ -153,16 +187,16 @@
         <div class="tags">C++ · Arduino · Raspberry Pi. Python</div>
       </div>
 
-        <div class="project">
-        <h3>iCare.AI — Medical Diagnostics </h3>
+      <div class="project">
+        <h3>iCare.AI — Medical Diagnostics</h3>
         <p>
           Developed ML models in PyTorch to detect lung cancer and brain tumors
-        with >70% accuracy. Won 1st Prize in Zambia’s National Science Fair
-        (Robotics & AI).
+          with >70% accuracy. Won 1st Prize in Zambia’s National Science Fair
+          (Robotics & AI).
         </p>
-        <div class="tags"> PyTorch . Gradio . Healthcare</div>
+        <div class="tags">PyTorch . Gradio . Healthcare</div>
       </div>
-      
+
       <div class="project">
         <h3>A-Store Full Stack</h3>
         <p>
@@ -171,14 +205,18 @@
         </p>
         <div class="tags">Next.js · Node.js · MongoDB</div>
       </div>
-    </div>
 
-     <div class="project">
-        <h3>Currently Learning </h3>
+      <div class="project current_learning">
+        <h3>Currently Learning</h3>
+
         <p>
-            Bare-metal C programming, Neural Architectures (Building LLM from scratch & Vision Transformers), and Practical Electronics for
-            Inventors.
+          Bare-metal C programming, Neural Architectures (Building LLM from
+          scratch & Vision Transformers), and Practical Electronics for
+          Inventors.
         </p>
+        <div class="tags">Books</div>
+      </div>
+    </div>
 
     <div class="section-label">Technical Primitives</div>
     <div class="stack">
@@ -206,8 +244,9 @@
         <h4>Systems</h4>
         <ul>
           <li>PostgreSQL / SQL</li>
-          <li>NextJs / React</li>
+          <li>React</li>
           <li>Mobile Dev with React Native</li>
+          <li>High High-performance Backend design with Node JS</li>
           <li>Linux Environment</li>
         </ul>
       </div>
